@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Űrlap</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li class="bal">Üdvözlünk!</li>
+                <li class="kipozicional" onclick="hideAll()"> <a href="#">Ugrás a tartalomra</a></li>
+                <li class="jobb hideOnMobile">Szolgáltatások:</li>
+                <li class="hideOnMobile"><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li class="hideOnMobile"><a href="autoszerelo.html "><img src="autoszerelologo.jpg" alt="Autókszerelő"></a></li>
+                <li class="hideOnMobile"><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+                <li class="hideOnPC" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    
+            </ul>
+            <ul class="sidenav">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li>Szolgáltatások:</li>
+                <li><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li><a href="autoszerelo.html"><img src="autoszerelologo.jpg" alt="Autókszerelő"></a></li>
+                <li><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+    
+            </ul>
+        </nav>
+        <script>
+            function showSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'flex';
+            }
+            function hideSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'none';
+            }
+            function hideAll(){
+                const header = document.querySelector('header')
+                header.style.display = 'none';
+                const footer = document.querySelector('footer')
+                footer.style.display = 'none';
+            }
+        </script>
+    </header>
+    <div class="main">
+    <form action="mailto:e2qa40@inf.elte.hu" method="POST" enctype="text/plain" class="Nunito">
+    <fieldset>
+    <legend>Saját adataid</legend>
+    <label for="Vnev"><strong>Vezetéknév</strong></label>
+    <input type="text" name="Vnev" id="Vnev">
+    <br>
+    <label for="Knev"> <strong>Keresztnév</strong></label>
+    <input type="text" name="Knev" id="Knev">
+    <br>
+    <label for="E-mail"> <strong>E-mail cím</strong></label>
+    <input type="text" name="E-mail" id="E-mail">
+    <br>
+    <label for="osszefoglalas"><strong>Problémák az autóval</strong></label> <br>
+    <textarea id="osszefoglalas" maxlength="800" placeholder="Ide írd hogy mik a problémák az autóval, vagy milyen szolgáltatásokat szeretnél igénybe venni"></textarea>
+    <br>
+    
+    </fieldset>
+    <fieldset>
+        <legend>Válaszóló E-mail</legend>
+        <p>Szeretnél időpontot/választ kapni E-mail-be?</p>
+        <input type="radio" name="valasz" id="igen" value="Igen" checked><label for="igen"><strong>Igen, szeretnék</strong></label><br>
+        <input type="radio" name="valasz" id="nem" value="Nem"><label for="nem"><strong>Nem, nem szeretnék</strong></label><br>
+        <input type="checkbox" name="rogzit" id="rogzit" value="Igen"><label for="rogzit"><strong>Rögzítem adataim</strong> (későbbre)</label>
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Küldés"> <input type="reset" value="Törlés">
+    </fieldset>
+    </form>
+    <nav class="padding">
+        <a href="index.html" class="fo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg> Vissza a Főoldalra</a> 
+        
+        </nav>
+    <br>
+    </div>
+</body>
+</html>

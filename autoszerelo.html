@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hu" class="autoszerelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Németh Sándor Autoszerelő</title>
+</head>
+
+<body>
+    <a id="top"></a>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li class="bal">Németh Sándor Autószerelő</li>
+                <li class="kipozicional" onclick="hideAll()"> <a href="#">Ugrás a tartalomra</a></li>
+                <li class="jobb hideOnMobile">Szolgáltatások:</li>
+                <li class="bal hideOnMobile"><a href="index.html">Főoldal</a></li>
+                <li class="hideOnMobile"><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li class="hideOnMobile"><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+                <li class="hideOnPC" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    
+            </ul>
+            <ul class="sidenav">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li>Szolgáltatások:</li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="autoberles.html"><img src="autokolcsonzo.png" alt="Autókölcsönző"></a></li>
+                <li><a href="kozmetika.html"><img src="autokozmetika.png" alt="Autókozmetika"></a></li>
+    
+            </ul>
+        </nav>
+        <script>
+            function showSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'flex';
+            }
+            function hideSideBar(){
+                const sidenav = document.querySelector('ul.sidenav')
+                sidenav.style.display = 'none';
+            }
+            function hideAll(){
+                const header = document.querySelector('header')
+                header.style.display = 'none';
+                const footer = document.querySelector('footer')
+                footer.style.display = 'none';
+            }
+        </script>
+    </header>
+    <div class="main">
+        <h1>Németh Sándor Autószerelő Mester</h1>
+        <p class="bev">Mesteri fokon űzött autójavítás, felújítás. Bármi probléma adódik gépjárműjével, mi tudni fogjuk
+            rá a megoldást és bátran kezdünk bele javításában. Nem számít, hogy régi vagy új autóról beszélünk, Sándor
+            már több mint 30 év tapasztapalattal rendelkezik, és ez sokat elmond a hatalmas vevőköréről.</p>
+        <hr>
+        <div class="kepek">
+            <div>
+                <p><a href="muhely.jpg" class="bigger"><img src="muhely.jpg" alt="Műhely" title="A műhely" class="kilencven"></a></p>
+                <p class="megnev">A műhely</p>
+            </div>
+        </div>
+        <hr>
+        <h2>A magasan felszerelt műhelynek köszönhetően folyékonyan lehet végezni a munkát. De pontosan ez mit is
+            jelent?</h2>
+        <div class="Nunito padding">
+            <ul>
+                <li>2 csápos emelővel és egy aknával felépített műhely, tehát egyszerre 3 autóval is lehet foglalkozni,
+                    ha
+                    esetleg az egyik autónál ideiglenesen nem lehet tovább haladni</li>
+                <li>Egy külső akna is található ahol akár egy teherautót is lehet szerelni</li>
+            </ul>
+        </div>
+        <div class="kepek">
+            <div>
+                <p><img src="csapos.jpg" alt="Csáposemelő" title="Csáposemelő" class="nyolcvan"></p>
+                <p class="megnev">2003 óta hibátlanul működő csáposemelő</p>
+            </div>
+        </div>
+        <div class="Nunito padding">
+            <ul>
+                <li>Kereket is tudunk gumizni, centírozni</li>
+            </ul>
+        </div>
+        <div class="kepek">
+            <div>
+                <p><img src="gumizo.jpg" alt="Gumizó" title="Gumizó" class="negyven"></p>
+                <p class="megnev">Gumizó</p>
+            </div>
+            <div>
+                <p><img src="centirozo.jpg" alt="Centírozó" title="Centírozó" class="negyven"></p>
+                <p class="megnev">Centírozó</p>
+            </div>
+        </div>
+        <div class="Nunito padding">
+            <ul>
+                <li> Vannak alkatrészek, amiket tisztítani kell, hogy a probléma eltűnjön. Ehhez is van 2 gépünk, az
+                    egyik
+                    egy magasnyomású kézi alkatrészmosó, és egy homokfúvó amit elektronikai elemekkel felszerelt
+                    alkatrészeket tudunk vele tisztítani baj nélkül</li>
+            </ul>
+        </div>
+        <div class="kepek">
+            <div>
+                <p><img src="alkatreszmoso.jpg" alt="Alkatrészmosó" title="Alkatrészmosó" class="negyven"></p>
+                <p class="megnev">Alkatrészmosó</p>
+            </div>
+            <div>
+                <p><img src="homokfuvo.jpg" alt="Homokfúvó" title="Homokfúvó" class="negyven"></p>
+                <p class="megnev">Homokfúvó</p>
+            </div>
+        </div>
+        <div class="Nunito padding">
+            <ul>
+                <li>És nyáron a nagy hőségbe ha már úgy érzed nem tudod lehűteni magad a kocsiba, klímatöltőnk is van
+                </li>
+
+            </ul>
+        </div>
+        <div class="kepek">
+            <div>
+                <p><img src="klima.jpg" alt="Klímatöltő" title="Klímatöltő" class="negyven"></p>
+                <p class="megnev">Klímatöltő</p>
+            </div>
+        </div>
+        <hr>
+        <h2>Mit jelent a Mester?</h2>
+        <div class="Nunito padding">
+            <ul>
+                <li>Sándor mestervizsgát tett, hogy bebizonyítsa a tudását a szakmával kapcsolatban. A papírt, amit
+                    kapott,
+                    büszkén tartja bekeretezve az irodája falán</li>
+            </ul>
+        </div>
+        <div class="kepek">
+            <div>
+                <p><a href="mester.jpg" class="bigger"><img src="mester.jpg" alt="Mesterlevél" title="Mesterlevél" class="nyolcvan"></a></p>
+                <p class="megnev">A mesterlevél</p>
+            </div>
+        </div>
+        <hr>
+        <div class="padding">
+            <p class="Nunito"><strong>Szóval keress minket bátran! </strong>Nem fogsz bennünk csalódni! <br>
+                <u>Keress minket az alábbi lehetőségeken: </u>
+            </p>
+            <table>
+                <tr>
+                    <td>Telefonszám:</td>
+                    <td>+36 30 245 4455</td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td>nemethsandor730801 (gmail.com)</td>
+                </tr>
+                <tr>
+                    <td>Cím:</td>
+                    <td>8995 Salomvár, Dózsa György utca 49/1</td>
+                </tr>
+                <tr>
+                    <td>Nyitvatartás:</td>
+                    <td>Hétfő - Szombat 8:00 - 18:00 </td>
+                </tr>
+
+            </table>
+            
+       
+            <a href="index.html" class="fo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg> Vissza a Főoldalra</a> 
+            <a href="#top" class="vissza"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>Vissza a lap tetejére</a>
+               
+
+        </div>
+        <br>
+    </div>
+    <footer>
+        Author: Németh Tamás <br>
+        <a href="urlap.html" class="fo">Töltsd ki űrlapunkat!</a>
+    </footer>
+</body>
+
+</html>
